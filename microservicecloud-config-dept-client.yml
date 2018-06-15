@@ -6,9 +6,10 @@
 #开发环境配置
 server:
   port: 8001
-  spring:
-        profiles: dev
-        application: microservicecloud-config-dept-client
+
+spring:
+      profiles: dev
+      application: microservicecloud-config-dept-client
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml  #mybatis配置文件所在路径
   type-aliases-package: com.zf.springcloud.entity     #所有entity别名类所在包
@@ -51,9 +52,10 @@ info:
 #测试环境配置
 server:
   port: 8001
-  spring:
-        profiles: test
-        application: microservicecloud-config-dept-client
+
+spring:
+      profiles: test
+      application: microservicecloud-config-dept-client
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml  #mybatis配置文件所在路径
   type-aliases-package: com.zf.springcloud.entity     #所有entity别名类所在包
